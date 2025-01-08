@@ -9,13 +9,14 @@
 
 body {
     font-family: 'Gabriela';
-    background: #fff;
+    background: #4b583f;
     text-align: center;
     color: #591102;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    user-select: none;
     
 }
 
@@ -35,7 +36,7 @@ h1 {
     font-size: 3.0rem;
     color: #591102;
     margin-bottom: 50px;
-    text-shadow: 0px 1px 2px black;
+    animation: fadeInRight 1.5s ease-in-out forwards;
 }
 
 #buttons-container {
@@ -50,11 +51,12 @@ h1 {
     background-color:  #f6f6f6;
     border-radius: 5px;
     box-shadow: 0px 10px 30px 0px rgba(1, 1, 1, 0.7);
+    animation: fadeIn 1.5s ease-in-out forwards;
    
 }
 
 button {
-    background-color: #59654d;
+    background-color: #4b583f;
     border: 2px solid #fff8e7;
     border-radius: 8px;
     color: #f4f2f0;
@@ -88,6 +90,7 @@ button.disabled {
     margin-bottom: 40px;
     font-size: 4rem;
     text-shadow: 1px 2px 2px black;
+    animation: fadeInRight 1.5s ease-in-out forwards;
 }
 
 /* Botões marcados por outro usuário */
@@ -108,12 +111,33 @@ button.other-user-marked {
     }
 }
 
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(-600px);
+    } to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight{
+    from{
+        opacity: 0;
+        transform: translateX(600px);
+    } to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 /* Total */
 #total {
     font-size: 4rem;
     font-weight: bold;
     color: #591102;
     margin-top: 60px;
+    
 }
 
 @media (max-width: 768px) {

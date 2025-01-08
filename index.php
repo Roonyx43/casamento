@@ -25,7 +25,7 @@ $user_id = $_SESSION['user_id'];
         </div>
     </header>
 
-    <h1>Nosso Dia ❤️</h1>
+    <h1>Nosso Dia</h1>
     <div id="buttons-container"></div>
     <div class="container-total">Total: <span id="total">R$ 0,00</span></div>
     <script>
