@@ -14,6 +14,7 @@ $user_id = $_SESSION['user_id'];
     <title>Nosso Dia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/assets/logo.ico" type="image/x-icon">
 </head>
 <body>
 
