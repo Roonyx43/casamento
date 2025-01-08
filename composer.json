@@ -1,8 +1,6 @@
 {
     "require": {
-      "php": ">=7.3",
-        "twilio/sdk": "^8.2",
-        "phpmailer/phpmailer": "^6.9"
+      "php": ">=7.3"
     },
     "scripts": {
       "start": "php -S 0.0.0.0:8000"
