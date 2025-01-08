@@ -1,0 +1,6 @@
+[phases]
+setup = "apt-get update && apt-get install -y nginx"
+
+[static]
+buildOutput = "."
+startCommand = "nginx -g 'daemon off;' -c /app/nginx.conf"
