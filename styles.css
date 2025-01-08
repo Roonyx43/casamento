@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+/* Estilos gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gabriela';
+    background: #fff;
+    text-align: center;
+    color: #591102;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header{
+    background-color: #591102;
+    width: 100%;
+    height: 0%;
+    box-shadow: 0px 2px 5px 0px black;
+}
+
+.logo-principal{
+    width: 5%;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 3.0rem;
+    color: #591102;
+    margin-bottom: 50px;
+    text-shadow: 0px 1px 2px black;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    height: auto 0;
+    padding: 20px;
+    background-color:  #f6f6f6;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px 0px rgba(1, 1, 1, 0.7);
+   
+}
+
+button {
+    background-color: #59654d;
+    border: 2px solid #fff8e7;
+    border-radius: 8px;
+    color: #f4f2f0;
+    font-size: 1rem;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #7a8f6b;
+    transform: translateY(-3px);
+}
+
+button.checked {
+    background-color: #591102;
+    color: #fff8e7;
+    border-color: #7a3b24;
+    animation: pulse 0.5s ease-in-out;
+}
+
+button.disabled {
+    background-color: #8e8e8e;
+    color: #ccc;
+    border-color: #aaa;
+    cursor: not-allowed;
+}
+
+.container-total{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 4rem;
+    text-shadow: 1px 2px 2px black;
+}
+
+/* Botões marcados por outro usuário */
+button.other-user-marked {
+    border: 2px solid #d9534f;
+}
+
+/* Animação para os botões marcados */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Total */
+#total {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #591102;
+    margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .logo-principal{
+        width: 20%;
+    }
+}

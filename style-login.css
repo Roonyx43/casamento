@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+/* Estilos gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gabriela';
+    background: #fff;
+    text-align: center;
+    color: #591102;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-login{
+    background-color: #591102;
+    width: 30%;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.8);
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-login{
+    width: 20%;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    transform: scale(1.0);
+    animation: expand 0.6s infinite;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: goldenrod solid 2px;
+    border-radius: 5px;
+    text-align: center;
+    color: #591102;
+    outline: none;
+}
+
+button{
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    color: white;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 5px;
+}
+
+input::placeholder{
+    text-align: center;
+    color: #591102
+}
+
+@media (max-width: 768px){
+    .container-login{
+        width: 85%;
+    }
+
+    .logo-login{
+        width: 40%;
+    }
+}
+
+@keyframes expand{
+    33%{
+        transform: scale(1.0);
+    } 66%{
+        transform: scale(1.2);
+    } 100%{
+        transform: scale(1.0);
+    }
+}
