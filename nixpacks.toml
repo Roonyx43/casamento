@@ -1,9 +1,0 @@
-[phases.setup]
-commands = [
-    "apt-get update",
-    "apt-get install -y nginx php-fpm php-cli"
-]
-
-[static]
-buildOutput = "."
-startCommand = "php-fpm && nginx -g 'daemon off;' -c /app/nginx.conf"
