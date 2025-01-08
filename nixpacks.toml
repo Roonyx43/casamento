@@ -1,5 +1,8 @@
-[phases]
-setup = "apt-get update && apt-get install -y nginx"
+[phases.setup]
+commands = [
+  "apt-get update",
+  "apt-get install -y nginx"
+]
 
 [static]
 buildOutput = "."
