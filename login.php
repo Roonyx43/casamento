@@ -31,6 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosso dia</title>
     <link rel="stylesheet" href="style-login.css">
+    <link rel="shortcut icon" href="/assets/logo.ico" type="image/x-icon">
 </head>
 <body>
     <div class="container-login">
